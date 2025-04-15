@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Caption</title>
+    <style>
+        body {
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        p {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.6; 
+            text-align: justify; 
+            max-width: 600px; 
+            margin: 10px auto; 
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .caption {
+            font-style: italic;
+            margin-top: 5px;
+            color: #555;
+        }
+        .styled-button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #007BFF;
+            border: 2px solid #0056b3;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+        .styled-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This is the first paragraph, where I introduce the topic of the page. 
+        HTML is the foundation of web development, allowing us to structure content for websites.</p>
+    <p>The second paragraph provides additional details.
+         Using HTML with CSS and JavaScript helps in creating interactive and visually appealing web pages. </p>
+    <div class="image-container">
+        <img src="https://www.rlogical.com/wp-content/uploads/2020/12/MERN.webp" alt="Sample Image">
+        <p class="caption"> A sample image with a caption</p>
+    </div>
+    <br>
+    <a href="#" class="styled-button">Click Me</a>
+</body>
+</html>
